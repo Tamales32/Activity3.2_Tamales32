@@ -69,3 +69,6 @@ CREATE TABLE IF NOT EXISTS public.HeroItem
     FOREIGN KEY (hero_id) REFERENCES Hero(hero_id),
     FOREIGN KEY (item_id) REFERENCES Item(item_id)
 );
+
+ALTER TABLE public.item
+ADD item_price DECIMAL(10, 2);
